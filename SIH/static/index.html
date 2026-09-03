@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StatSkill AI — AI-Powered Competency & Learning Platform for Official Statistics | MoSPI</title>
+    <meta name="description" content="Capacity building and competency intelligence platform for India's Official Statistical System. Integrated with iGOT Karmayogi, NSSTA, and AI-enabled skill gap assessment.">
+    <meta name="theme-color" content="#0B2545">
+
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0B2545',
+                            950: '#07182C'
+                        },
+                        saffron: {
+                            500: '#F97316',
+                            600: '#EA580C',
+                            700: '#C2410C'
+                        },
+                        indiagreen: {
+                            500: '#10B981',
+                            600: '#059669',
+                            700: '#047857'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Chart.js CDN for Radar & Workforce Visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS Design Tokens -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased">
+    <!-- Main SPA Mounting Root -->
+    <div id="app" class="flex-1 flex flex-col">
+        <!-- Content will be rendered dynamically by store & components -->
+        <div class="p-16 text-center text-slate-500 font-bold">
+            <i class="fa-solid fa-spinner fa-spin text-2xl text-orange-500 mb-2"></i>
+            <div>Loading StatSkill AI Platform...</div>
+        </div>
+    </div>
+
+    <!-- Application Scripts -->
+    <script src="/js/mockData.js?v=2.7"></script>
+    <script src="/js/orgDataService.js?v=2.7"></script>
+    <script src="/js/store.js?v=2.7"></script>
+
+    <!-- UI Components -->
+    <script src="/js/components/authModal.js?v=2.7"></script>
+    <script src="/js/components/navbar.js?v=2.7"></script>
+    <script src="/js/components/landing.js?v=2.7"></script>
+    <script src="/js/components/learnerDash.js?v=2.7"></script>
+    <script src="/js/components/framework.js?v=2.7"></script>
+    <script src="/js/components/assessment.js?v=2.7"></script>
+    <script src="/js/components/learningPath.js?v=2.7"></script>
+    <script src="/js/components/recommendations.js?v=2.7"></script>
+    <script src="/js/components/igotHub.js?v=2.7"></script>
+    <script src="/js/components/aiGenerator.js?v=2.7"></script>
+    <script src="/js/components/quizPlayer.js?v=2.7"></script>
+    <script src="/js/components/aiAssistant.js?v=2.7"></script>
+    <script src="/js/components/trainerDash.js?v=2.7"></script>
+    <script src="/js/components/adminDash.js?v=2.7"></script>
+    <script src="/js/components/reports.js?v=2.7"></script>
+    <script src="/js/components/profile.js?v=2.7"></script>
+
+    <!-- Standalone Global Accessibility Engine -->
+    <script src="/js/accessibilityManager.js?v=2.7"></script>
+
+    <!-- Main Coordinator Router -->
+    <script src="/js/app.js?v=2.7"></script>
+</body>
+</html>
